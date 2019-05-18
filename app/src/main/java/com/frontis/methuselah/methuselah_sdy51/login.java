@@ -141,7 +141,7 @@ public class login extends AppCompatActivity {
         });
 
     }
-    //This function helps in verifying whether the email is verified or not.
+    //Έλεγχος επιβεβαίωσης email.
     private void checkIfEmailVerified(){
         FirebaseUser users=FirebaseAuth.getInstance().getCurrentUser();
         boolean emailVerified=users.isEmailVerified();
@@ -156,7 +156,7 @@ public class login extends AppCompatActivity {
             Password.getText().clear();
             Intent intent = new Intent(login.this, DashboardActivity.class);
 
-            // Sending Email to Dashboard Activity using intent.
+            // Αποστολή email.
             intent.putExtra(userEmail,email);
 
             startActivity(intent);

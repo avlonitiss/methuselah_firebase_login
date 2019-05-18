@@ -64,19 +64,19 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         Password = password.getText().toString().trim();
 
         if (TextUtils.isEmpty(Name)){
-            Toast.makeText(Register.this, "Enter Name", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Register.this, "Γράψτε Όνομα", Toast.LENGTH_SHORT).show();
             return;
         }else if (TextUtils.isEmpty(Email)){
-            Toast.makeText(Register.this, "Enter Email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Register.this, "Γράψτε Email", Toast.LENGTH_SHORT).show();
             return;
         }else if (TextUtils.isEmpty(Password)){
-            Toast.makeText(Register.this, "Enter Password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Register.this, "Γράψτε Password", Toast.LENGTH_SHORT).show();
             return;
         }else if (Password.length()<6){
-            Toast.makeText(Register.this,"Passwor must be greater then 6 digit",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Register.this,"To μήκος του Passwor πρέπει να είναι μεγαλύτερο από 6 στοιχεία",Toast.LENGTH_SHORT).show();
             return;
         }
-        mDialog.setMessage("Creating User please wait...");
+        mDialog.setMessage("Περιμένεται, ο χρήστης δημιουργείται...");
         mDialog.setCanceledOnTouchOutside(false);
         mDialog.show();
         mAuth.createUserWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -88,12 +88,12 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                     OnAuth(task.getResult().getUser());
                     mAuth.signOut();
                 }else{
-                    Toast.makeText(Register.this,"error on creating user",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this,"Σφάλμα κατά την δημιουργία χρήστη",Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
-//Email verification code using FirebaseUser object and using isSucccessful()function.
+//Επαλήθευση Email με FirebaseUser object και isSucccessful().
     private void sendEmailVerification() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user!=null){
@@ -101,7 +101,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(Register.this,"Check your Email for verification",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Register.this,"Ελέγξτε το Email για επαλήθευση",Toast.LENGTH_SHORT).show();
                         FirebaseAuth.getInstance().signOut();
                     }
                 }
