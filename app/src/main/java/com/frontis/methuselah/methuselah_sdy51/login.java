@@ -1,4 +1,4 @@
-package com.example.shiva.try1;
+package com.frontis.methuselah.methuselah_sdy51;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.shiva.try1.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -59,26 +60,24 @@ public class login extends AppCompatActivity {
 
             }
         };
-       // LogInButton.setOnClickListener((View.OnClickListener) this);
-        //RegisterButton.setOnClickListener((View.OnClickListener) this);
-        //Adding click listener to log in button.
+
         LogInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                // Calling EditText is empty or no method.
+                // Έλεγχος άδειου EditText.
                 userSign();
 
 
             }
         });
 
-        // Adding click listener to register button.
+
         RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                // Opening new user registration activity using intent on button click.
+                // για νέο χρήστη εκκίνηση registration activity .
                 Intent intent = new Intent(login.this, Register.class);
                 startActivity(intent);
 
@@ -90,7 +89,7 @@ public class login extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        //removeAuthSateListner is used  in onStart function just for checking purposes,it helps in logging you out.
+        //τερματισμός του listener στο logout.
         mAuth.removeAuthStateListener(mAuthListner);
 
     }
@@ -115,13 +114,13 @@ public class login extends AppCompatActivity {
         email = Email.getText().toString().trim();
         password = Password.getText().toString().trim();
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(login.this, "Enter the correct Email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(login.this, "Γράψτε το σωστό Email", Toast.LENGTH_SHORT).show();
             return;
         } else if (TextUtils.isEmpty(password)) {
-            Toast.makeText(login.this, "Enter the correct password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(login.this, "Γράψτε το σωστό password", Toast.LENGTH_SHORT).show();
             return;
         }
-        dialog.setMessage("Loging in please wait...");
+        dialog.setMessage("Συνδέεται...");
         dialog.setIndeterminate(true);
         dialog.show();
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -130,7 +129,7 @@ public class login extends AppCompatActivity {
                 if (!task.isSuccessful()) {
                     dialog.dismiss();
 
-                    Toast.makeText(login.this, "Login not successfull", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(login.this, "Αποτυχία σύνδεσης", Toast.LENGTH_SHORT).show();
 
                 } else {
                     dialog.dismiss();
@@ -147,7 +146,7 @@ public class login extends AppCompatActivity {
         FirebaseUser users=FirebaseAuth.getInstance().getCurrentUser();
         boolean emailVerified=users.isEmailVerified();
         if(!emailVerified){
-            Toast.makeText(this,"Verify the Email Id",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Επιβεβαίωση Email Id",Toast.LENGTH_SHORT).show();
             mAuth.signOut();
             finish();
         }
