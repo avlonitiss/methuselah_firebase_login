@@ -1,39 +1,111 @@
 {
   "project_info": {
-    "project_number": "135473486604",
-    "firebase_url": "https://try1-d1dcf.firebaseio.com",
-    "project_id": "try1-d1dcf",
-    "storage_bucket": "try1-d1dcf.appspot.com"
+    "project_number": "560860361961",
+    "firebase_url": "https://methuselah-da2ba.firebaseio.com",
+    "project_id": "methuselah-da2ba",
+    "storage_bucket": "methuselah-da2ba.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:135473486604:android:00eda874a0fdb1b7",
+        "mobilesdk_app_id": "1:560860361961:android:00eda874a0fdb1b7",
         "android_client_info": {
           "package_name": "com.example.shiva.try1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "135473486604-kd365gr6jl0mmpsp5p031aodmdlncb9u.apps.googleusercontent.com",
+          "client_id": "560860361961-g4qj03981ba3umtnrh32jk7vos4ouuo5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBIWJ2wAqZrTXoF6EkiLLBKgYFKRuSeK9s"
+          "current_key": "AIzaSyAKh95Rsyew5vqfxX7srjNvJ0nLjzddBdc"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560860361961-g4qj03981ba3umtnrh32jk7vos4ouuo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560860361961:android:f88e36a42022cb21",
+        "android_client_info": {
+          "package_name": "com.frontis.methuselah_frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560860361961-cl51612utj7d0gaf7fi36t7h56enqor4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.frontis.methuselah_frontend",
+            "certificate_hash": "0619f721ed45d5c8cd682cc40904cd4cc61a2598"
+          }
         },
-        "ads_service": {
-          "status": 2
+        {
+          "client_id": "560860361961-g4qj03981ba3umtnrh32jk7vos4ouuo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKh95Rsyew5vqfxX7srjNvJ0nLjzddBdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560860361961-g4qj03981ba3umtnrh32jk7vos4ouuo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560860361961:android:8b8a2acb19168c42",
+        "android_client_info": {
+          "package_name": "com.frontis.methuselah_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560860361961-00vm07dfkbe881mcr1otn691ptclfeb5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.frontis.methuselah_login",
+            "certificate_hash": "ad80be8d0d894a8178379b95bbd413696f6275c3"
+          }
+        },
+        {
+          "client_id": "560860361961-g4qj03981ba3umtnrh32jk7vos4ouuo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKh95Rsyew5vqfxX7srjNvJ0nLjzddBdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560860361961-g4qj03981ba3umtnrh32jk7vos4ouuo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
