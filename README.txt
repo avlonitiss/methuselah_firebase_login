@@ -1,4 +1,4 @@
-1. The apk is there in the APK folder and also present in app>release>app-release.apk
+. The apk is there in the APK folder and also present in app>release>app-release.apk
 2.Code comprises of three Activities.
   	a.login.java(main)
 	b.Register.java

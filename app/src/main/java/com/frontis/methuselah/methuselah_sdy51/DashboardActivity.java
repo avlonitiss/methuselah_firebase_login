@@ -31,36 +31,24 @@ public class DashboardActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        // Receiving User Email Send By MainActivity.
+        // Λήψη του απεσταλμένου email από MainActivity.
         EmailHolder = intent.getStringExtra(login.userEmail);
 
-        // Setting up received email to TextView.
+
         Email.setText(Email.getText().toString()+ EmailHolder);
 
-        // Adding click listener to Log Out button.
+
 
         LogOUT.setOnClickListener(new View.OnClickListener() {
            // @Override
             public void onClick(View v) {
 
 
-                //Finishing current DashBoard activity on button click.
+
                finish();
 
                 Toast.makeText(DashboardActivity.this,"Επιτυχής αποσύνδεση", Toast.LENGTH_LONG).show();
-                //Intent intent=new Intent(DashboardActivity.this,login.class);
-                //startActivity(intent);
-               /*if (v.getId() == R.id.button1) {
-                    AuthUI.getInstance()
-                            .signOut(this)
-                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    // user is now signed out
-                                    startActivity(new Intent(DashboardActivity.this, login.class));
-                                    finish();
-                                }
-                            });
-                }*/
+
 
             }
         });

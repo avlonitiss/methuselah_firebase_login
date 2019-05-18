@@ -17,10 +17,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="User Login "
+        android:hint="df"
+        android:text="Σύνδεση Χρήστη"
         android:textColor="#000"
-        android:textSize="20dp"
-        android:hint="df"/>
+        android:textSize="36sp" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -36,25 +36,27 @@
         android:gravity="center"/>
 
     <EditText
+        android:id="@+id/editPassword"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="Enter Password"
-        android:textColor="#000"
-        android:ems="10"
         android:layout_below="@+id/editEmail"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:id="@+id/editPassword"
-        android:gravity="center"/>
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Μυστικός κωδικός"
+        android:inputType="textPassword"
+        android:textColor="#000" />
 
     <Button
+        android:id="@+id/buttonLogin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonLogin"
         android:layout_below="@+id/editPassword"
         android:layout_marginTop="20dp"
-        android:text="Log IN "/>
+        android:background="@android:color/holo_red_light"
+        android:text="ΣΥΝΔΕΣΗ"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/buttonRegister"
@@ -62,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonLogin"
         android:layout_marginTop="20dp"
-        android:text="NOT A USER? | SIGN UP" />
+        android:text="NEOΣ ΧΡΗΣΤΗΣ ? | ΕΓΓΡΑΦΕΙΤΕ"
+        android:textSize="24sp" />
 
 </RelativeLayout>
