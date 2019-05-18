@@ -19,7 +19,8 @@ public class DashboardActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListner;
     FirebaseUser mUser;
-    //@SuppressLint("SetTextI18n")
+
+
     public static final String TAG="LOGIN";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
