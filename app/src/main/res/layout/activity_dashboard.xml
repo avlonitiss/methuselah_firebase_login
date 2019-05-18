@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="176dp"
         android:gravity="center"
-        android:text="Hello "
+        android:text="Καλώς ήλθες στον Μαθουσάλα     "
         android:textColor="#000"
         android:textSize="20dp" />
 

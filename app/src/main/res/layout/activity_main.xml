@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.shiva.try1.com.frontis.shiva.try1.login">
+    tools:context="com.frontis.methuselah.methuselah_sdy51.login">
 
     <TextView
         android:id="@+id/textView"

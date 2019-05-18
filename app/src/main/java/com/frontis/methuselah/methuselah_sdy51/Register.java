@@ -1,5 +1,6 @@
 package com.frontis.methuselah.methuselah_sdy51;
 
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,6 +23,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Date;
+
+/**
+ * Άρχικός κώδικας by shiva on 31-01-2018.
+ * Τροποποιήθηκε από την ομάδα Αυλωνίτης - Ερενίδης Χαραλαμπόπουλος για την 5η ΓΕ της ΣΔΥ51
+ */
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
     EditText name,email,password;

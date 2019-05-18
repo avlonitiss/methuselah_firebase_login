@@ -11,6 +11,11 @@ import com.example.shiva.try1.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+/**
+ * Άρχικός κώδικας by shiva on 31-01-2018.
+ * Τροποποιήθηκε από την ομάδα Αυλωνίτης - Ερενίδης Χαραλαμπόπουλος για την 5η ΓΕ της ΣΔΥ51
+ */
+
 public class DashboardActivity extends AppCompatActivity {
 
     String EmailHolder;
