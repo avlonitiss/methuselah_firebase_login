@@ -4,7 +4,7 @@
     <string name="title_activity_mapsbank">Χάρτης ΤΡΑΠΕΖΩΝ</string>
     <string name="title_activity_mapscare">Χάρτης ΣΗΜΕΙΩΝ ΦΡΟΝΤΙΔΑΣ</string>
     <string name="google_maps_key">AIzaSyAKh95Rsyew5vqfxX7srjNvJ0nLjzddBdc</string>
-    <string name="title_activity_happening">Κατάλογος εκδηλώσεων</string>
+    <string name="title_activity_mapshappenings">Κατάλογος εκδηλώσεων</string>
     <string name="action_settings">Settings</string>
 
 </resources>

@@ -69,7 +69,7 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 // για νέο χρήστη εκκίνηση registration activity .
-                Intent intent = new Intent(DashboardActivity.this, HappeningActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, MapsActivityhappenings.class);
                 startActivity(intent);
 
             }

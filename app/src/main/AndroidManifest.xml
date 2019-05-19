@@ -17,15 +17,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name="com.frontis.methuselah.methuselah_sdy51.HappeningActivity"
-            android:label="@string/title_activity_happening"
-            android:parentActivityName="com.frontis.methuselah.methuselah_sdy51.DashboardActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.frontis.methuselah.methuselah_sdy51.DashboardActivity" />
-        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -48,6 +39,13 @@
         <activity
             android:name="com.frontis.methuselah.methuselah_sdy51.MapsActivityBank"
             android:label="@string/title_activity_mapsbank">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.frontis.methuselah.methuselah_sdy51.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.frontis.methuselah.methuselah_sdy51.MapsActivityhappenings"
+            android:label="@string/title_activity_mapshappenings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.frontis.methuselah.methuselah_sdy51.DashboardActivity" />
