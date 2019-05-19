@@ -82,7 +82,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             Toast.makeText(Register.this,"To μήκος του Passwor πρέπει να είναι μεγαλύτερο από 6 στοιχεία",Toast.LENGTH_SHORT).show();
             return;
         }
-        mDialog.setMessage("Περιμένεται, ο χρήστης δημιουργείται...");
+        mDialog.setMessage("Περιμένετε, ο χρήστης δημιουργείται...");
         mDialog.setCanceledOnTouchOutside(false);
         mDialog.show();
         mAuth.createUserWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
