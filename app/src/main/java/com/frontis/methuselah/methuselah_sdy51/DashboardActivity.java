@@ -21,8 +21,7 @@ public class DashboardActivity extends AppCompatActivity {
     String EmailHolder;
     TextView Email;
     Button LogOUT ;
-    Button HappeningsButton;
-    Button KaphButton;
+    Button HappeningsButton, KaphButton, BankButton, CareButton;
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListner;
     FirebaseUser mUser;
@@ -38,6 +37,8 @@ public class DashboardActivity extends AppCompatActivity {
        LogOUT = (Button)findViewById(R.id.button1);
        HappeningsButton = (Button) findViewById(R.id.button6);
        KaphButton = (Button) findViewById(R.id.button5);
+       BankButton = (Button) findViewById(R.id.button7);
+       CareButton = (Button) findViewById(R.id.button8);
 
         Intent intent = getIntent();
 
@@ -68,7 +69,7 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 // για νέο χρήστη εκκίνηση registration activity .
-                Intent intent = new Intent(DashboardActivity.this, MapsActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, HappeningActivity.class);
                 startActivity(intent);
 
             }
@@ -79,7 +80,29 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 // για νέο χρήστη εκκίνηση registration activity .
-                Intent intent = new Intent(DashboardActivity.this, MapsActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, MapsActivityKAPH.class);
+                startActivity(intent);
+
+            }
+        });
+
+        CareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                // για νέο χρήστη εκκίνηση registration activity .
+                Intent intent = new Intent(DashboardActivity.this, MapsActivityCare.class);
+                startActivity(intent);
+
+            }
+        });
+
+        BankButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                // για νέο χρήστη εκκίνηση registration activity .
+                Intent intent = new Intent(DashboardActivity.this, MapsActivityBank.class);
                 startActivity(intent);
 
             }

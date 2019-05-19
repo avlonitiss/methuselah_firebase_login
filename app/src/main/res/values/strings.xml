@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Μαθουσάλας</string>
-    <string name="title_happening_list">Happenings</string>
-    <string name="title_happening_detail">Happening Detail</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_mapskaph">Χάρτης ΚΑΠΗ</string>
+    <string name="title_activity_mapsbank">Χάρτης ΤΡΑΠΕΖΩΝ</string>
+    <string name="title_activity_mapscare">Χάρτης ΣΗΜΕΙΩΝ ΦΡΟΝΤΙΔΑΣ</string>
     <string name="google_maps_key">AIzaSyAKh95Rsyew5vqfxX7srjNvJ0nLjzddBdc</string>
+    <string name="title_activity_happening">Κατάλογος εκδηλώσεων</string>
+    <string name="action_settings">Settings</string>
+
 </resources>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shiva.try1">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
@@ -16,7 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity
+            android:name="com.frontis.methuselah.methuselah_sdy51.HappeningActivity"
+            android:label="@string/title_activity_happening"
+            android:parentActivityName="com.frontis.methuselah.methuselah_sdy51.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.frontis.methuselah.methuselah_sdy51.DashboardActivity" />
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -30,8 +39,22 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.frontis.methuselah.methuselah_sdy51.MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:name="com.frontis.methuselah.methuselah_sdy51.MapsActivityKAPH"
+            android:label="@string/title_activity_mapskaph">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.frontis.methuselah.methuselah_sdy51.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.frontis.methuselah.methuselah_sdy51.MapsActivityBank"
+            android:label="@string/title_activity_mapsbank">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.frontis.methuselah.methuselah_sdy51.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.frontis.methuselah.methuselah_sdy51.MapsActivityCare"
+            android:label="@string/title_activity_mapscare">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.frontis.methuselah.methuselah_sdy51.DashboardActivity" />
