@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.shiva.try1.com.frontis.shiva.try1.Register">
+    tools:context="com.frontis.methuselah.methuselah_sdy51.Register">
 
     <TextView
         android:id="@+id/textView"
@@ -26,12 +26,35 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="38dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="Όνομα χρήστη"
+        android:hint="Ονοματεπώνυμο χρήστη"
         android:inputType="textEmailAddress"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/editName2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="159dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ημερομηνία γέννησης"
+        android:inputType="date"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/editName3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="113dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Διεύθυνση κατοικίας"
+        android:inputType="text"
         android:textColor="#000" />
 
     <EditText
@@ -39,8 +62,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="131dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Email"
@@ -52,8 +74,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Password"
@@ -65,7 +86,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editPassword"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="54dp"
         android:text="ΕΓΓΡΑΦΗ"
         android:textColor="@android:color/holo_red_light"
         android:textSize="36sp" />
@@ -75,7 +96,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonRegister"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="47dp"
         android:text="ΣΥΝΔΕΣΗ"
         android:textSize="24sp" />
 
